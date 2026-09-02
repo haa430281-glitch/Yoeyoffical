@@ -1,435 +1,547 @@
-<!--
-
-If you want to take a break from looking at the boring code, look at my amazing art skills
-
-      ___         ___                       ___           ___           ___           ___     
-     /  /\       /  /\          ___        /  /\         /  /\         /  /\         /__/\    
-    /  /::\     /  /:/_        /  /\      /  /:/_       /  /::|       /  /::\        \  \:\   
-   /  /:/\:\   /  /:/ /\      /  /:/     /  /:/ /\     /  /:/:|      /  /:/\:\        \__\:\  
-  /  /:/~/:/  /  /:/ /:/_    /  /:/     /  /:/ /:/_   /  /:/|:|__   /  /:/~/::\   ___ /  /::\ 
- /__/:/ /:/  /__/:/ /:/ /\  /  /::\    /__/:/ /:/ /\ /__/:/ |:| /\ /__/:/ /:/\:\ /__/\  /:/\:\
- \  \:\/:/   \  \:\/:/ /:/ /__/:/\:\   \  \:\/:/ /:/ \__\/  |:|/:/ \  \:\/:/__\/ \  \:\/:/__\/
-  \  \::/     \  \::/ /:/  \__\/  \:\   \  \::/ /:/      |  |:/:/   \  \::/       \  \::/     
-   \  \:\      \  \:\/:/        \  \:\   \  \:\/:/       |  |::/     \  \:\        \  \:\     
-    \  \:\      \  \::/          \__\/    \  \::/        |  |:/       \  \:\        \  \:\    
-     \__\/       \__\/                     \__\/         |__|/         \__\/         \__\/    
-
-That was pretty awesome, I know.  
-
-If you want to make the website better, the repository is open source, and my dms are always open on discord!
-
--->
-
-<!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      !(function (e, t, a, n) {
-        ((e[n] = e[n] || []),
-          e[n].push({ "gtm.start": new Date().getTime(), event: "gtm.js" }));
-        var g = t.getElementsByTagName(a)[0],
-          m = t.createElement(a);
-        ((m.async = !0),
-          (m.src = "https://www.googletagmanager.com/gtm.js?id=GTM-WPH7NCG4"),
-          g.parentNode.insertBefore(m, g));
-      })(window, document, "script", "dataLayer");
-    </script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-SHE360M0YP"
-    ></script>
-    <script>
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      ((window.dataLayer = window.dataLayer || []),
-        gtag("js", new Date()),
-        gtag("config", "G-SHE360M0YP"));
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6640595376330309"
-    crossorigin="anonymous"></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>HypeStudy</title>
-    <meta
-      name="title"
-      content="HypeStudy"
-    />
-    <meta
-      name="description"
-      content="Create flashcards, take quizzes, track your progress with advanced analytics, and master any subject with confidence."
-    />
-    <meta
-      name="keywords"
-      content="Study, Flashcards, Quiz, Analytics, HypeStudy, Learning, Education, Study Tools, Exam Prep, Student Platform, Secure Study, Online Learning, Study Platform, Test Preparation, Academic Success"
-    />
-    <meta name="author" content="HypeStudy" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#f8f6f1" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
-    <meta name="revisit-after" content="7 days" />
-    <meta name="rating" content="General" />
-    <meta name="distribution" content="global" />
-    <meta name="copyright" content="HypeStudy" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="HypeStudy — Secure Study Platform for Students"
-    />
-    <meta
-      property="og:description"
-      content="Secure, animated, and modern study platform. Master your subjects with interactive flashcards, dynamic quizzes, comprehensive analytics, and powerful study tools."
-    />
-    <meta property="og:image" content="/logo.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="HypeStudy" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://hypestudy.com/" />
-    <meta name="twitter:site" content="@hypestudy" />
-    <meta name="twitter:creator" content="@hypestudy" />
-    <meta
-      name="twitter:title"
-      content="HypeStudy — Secure Study Platform for Students"
-    />
-    <meta
-      name="twitter:description"
-      content="Secure, animated, and modern study platform. Interactive flashcards, quizzes, analytics, and everything you need to excel in your studies."
-    />
-    <meta name="twitter:image" content="/logo.png" />
-    <meta
-      name="twitter:image:alt"
-      content="HypeStudy Logo - Secure Study Platform"
-    />
-    <meta name="application-name" content="HypeStudy" />
-    <meta name="apple-mobile-web-app-title" content="HypeStudy" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="msapplication-TileColor" content="#f8f6f1" />
-    <meta name="msapplication-config" content="/browserconfig.xml" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./logo.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./logo.png" />
-    <link rel="manifest" href="./manifest.json" />
+    <title>New Tab</title>
+    <link rel="stylesheet" type="text/css" href="/storage/css/themes2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <style>
-      html, body {
-        height: 100dvh;
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+      body {
+        color: #fff;
+        background-color: #0a1d37;
+        font-family:
+          'Inter',
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .god-rays {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        max-width: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        box-sizing: border-box;
-        background-color: #020810;
-        position: relative;
+        height: 550px;
+        --stripes: repeating-linear-gradient(
+          100deg,
+          rgba(20, 40, 60, 0.8) 0%,
+          rgba(20, 40, 60, 0.8) 7%,
+          transparent 10%,
+          transparent 12%,
+          rgba(20, 40, 60, 0.8) 16%
+        );
+        --rays: repeating-linear-gradient(
+          100deg,
+          rgba(30, 50, 90, 0.9) 10%,
+          rgba(20, 40, 80, 0.9) 15%,
+          rgba(30, 50, 90, 0.9) 20%,
+          rgba(20, 40, 80, 0.9) 25%,
+          rgba(30, 50, 90, 0.9) 30%
+        );
+        background-image: var(--stripes), var(--rays);
+        background-size: 300%, 200%;
+        background-position:
+          50% 50%,
+          50% 50%;
+        animation: fadeIn 2s ease;
+        mask-image: radial-gradient(ellipse at 100% 0%, rgba(255, 255, 255, 0) 40%, transparent 70%);
+        -webkit-mask-image: radial-gradient(ellipse at 100% 0%, white 40%, transparent 70%);
+        pointer-events: none;
+        z-index: -1;
       }
-      #root {
-        position: fixed !important;
-        inset: 0 !important;
-        width: 100% !important;
-        height: 100dvh !important;
-        max-width: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        box-sizing: border-box;
-        z-index: 10;
-        background-color: #020810;
+
+      .god-rays::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: var(--stripes), var(--rays);
+        background-size: 200%, 100%;
+        animation: god-rays 40s linear infinite;
+        background-attachment: fixed;
+        mix-blend-mode: difference;
       }
-      .education-is-key {
-        display: none !important;
+
+      h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        font-weight: 900;
+        text-transform: none;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        text-shadow:
+          0 0 15px rgba(255, 255, 255, 0.3),
+          0 0 20px rgba(255, 255, 255, 0.3);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      h1:hover {
+        transform: scale(1.05);
+      }
+
+      #dynamicParagraph {
+        color: #ffffff;
+        font-size: 1.25rem;
+        margin-top: 5px;
+        font-weight: 300;
+        text-shadow:
+          0 0 15px rgba(255, 255, 255, 0.2),
+          0 0 10px rgba(255, 255, 255, 0.1);
+        transition: color 0.3s ease-in-out;
+        cursor: pointer;
+      }
+
+      #dynamicParagraph:hover {
+        color: #a0a0a0;
+      }
+
+      #search-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .search-bar-home {
+        padding: 12px 18px;
+        width: 350px;
+        border: 2px solid #1e2a47;
+        background-color: #141414;
+        border-radius: 30px;
+        font-family: 'Outfit', sans-serif;
+        outline: none;
+        margin: 0;
+        color: #fff;
+        font-size: 16px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .search-bar-home::placeholder {
+        color: #bbb;
+        opacity: 0.8;
+        font-size: 14px;
+      }
+
+      .search-bar-home:focus {
+        border-color: #64a6e0;
+        background-color: #1d2537;
+      }
+
+      .search-button {
+        padding: 10px 20px;
+        background-color: #1e2a47;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 10px;
+        cursor: pointer;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .search-button:hover {
+        background-color: #64a6e0;
+        transform: translateY(-2px);
+      }
+
+      .search-button i {
+        margin-left: 8px;
+      }
+
+      #time {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 18px;
+        color: white;
+        font-family: 'Outfit', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #0a1d37;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 35px;
+        border-radius: 20px;
+        z-index: 1000;
+        color: #fff;
+        box-shadow:
+          0 10px 40px rgba(0, 0, 0, 0.4),
+          inset 0 0 10px rgba(255, 255, 255, 0.05);
+        animation: popupFadeIn 0.3s ease-out;
+        min-width: 400px;
+        max-width: 450px;
+        backdrop-filter: blur(8px);
+      }
+
+      @keyframes popupFadeIn {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -40%);
+        }
+
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .popup h3 {
+        margin: 0 0 20px;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 0.5px;
+      }
+
+      .popup input[type='text'] {
+        margin: 10px 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #fff;
+        padding: 12px 15px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        font-family: 'Outfit', sans-serif;
+      }
+
+      .popup input[type='text']:focus {
+        border-color: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        outline: none;
+      }
+
+      .popup input[type='file'] {
+        margin: 15px 0;
+        color: #fff;
+        width: 100%;
+        font-family: 'Outfit', sans-serif;
+      }
+
+      .popup input[type='file']::-webkit-file-upload-button {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 8px 15px;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .popup input[type='file']::-webkit-file-upload-button:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+
+      .popup-buttons {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-top: 20px;
+      }
+
+      .popup button {
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 500;
+      }
+
+      .popup button:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .popup button#add-btn {
+        background: linear-gradient(135deg, #ffffff, #e0e0e0);
+        color: #0a1d37;
+        border: none;
+      }
+
+      .popup button#add-btn:hover {
+        background: linear-gradient(135deg, #e0e0e0, #ffffff);
+      }
+
+      .add-pin-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        background: #ffffff;
+        border: 2px solid #0a1d37;
+        border-radius: 50%;
+        color: #0a1d37;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .add-pin-btn:hover {
+        transform: scale(1.2);
+        background: #e0e0e0;
+        color: #0a1d37;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       }
     </style>
-    <script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script>
-    <script type="module" crossorigin src="./assets/index-DgUiuA8a.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Bchvr6TY.css">
   </head>
+
   <body>
-    <div id="root"></div>
+    <div class="god-rays"></div>
+    <br /><br /><br /><br /><br />
 
-    <div class="education-is-key" aria-hidden="true">
-      <h1>Educational Resources and Online Learning Platform</h1>
-      <p>
-        Comprehensive education platform for students, teachers, and lifelong
-        learners. Access online courses, study materials, exam preparation
-        resources, and interactive learning tools.
-      </p>
-      <section>
-        <h2>Academic Subjects</h2>
-        <p>
-          Mathematics, Science, English, History, Literature, Writing, Reading,
-          Social Studies, Geography, Biology, Chemistry, Physics, Algebra,
-          Geometry, Calculus, Statistics, Computer Science, Programming, Foreign
-          Languages, Art, Music
-        </p>
-      </section>
-      <section>
-        <h2>Educational Services</h2>
-        <p>
-          Online courses, college credit, exam preparation, test prep, tutoring,
-          homework help, study guides, practice tests, educational videos,
-          interactive lessons, learning resources, curriculum development,
-          academic support, student success, teacher resources, educational
-          technology, e-learning, distance education, virtual classroom, online
-          tutoring, academic coaching
-        </p>
-      </section>
-      <section>
-        <h2>Student Levels</h2>
-        <p>
-          K-12 education, elementary school, middle school, high school,
-          college, university, graduate school, continuing education, adult
-          learning, professional development, certification programs, degree
-          programs, homeschool education
-        </p>
-      </section>
-      <section>
-        <h2>Test Preparation</h2>
-        <p>
-          SAT prep, ACT prep, GRE prep, GMAT prep, LSAT prep, MCAT prep, AP
-          courses, Advanced Placement, standardized tests, college entrance
-          exams, professional certification exams, state assessments, final
-          exams, midterms
-        </p>
-      </section>
-      <section>
-        <h3>Learning Methods</h3>
-        <p>
-          Interactive learning, video lessons, practice quizzes, flashcards,
-          study notes, educational games, adaptive learning, personalized
-          education, self-paced learning, collaborative learning, project-based
-          learning, STEM education, critical thinking, problem solving
-        </p>
-      </section>
+    <h1>Pete Prօxy</h1>
+    <p id="dynamicParagraph">(TEXT)</p>
+
+    <div id="search-container">
+      <form id="uv-form">
+        <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden" />
+        <input id="uv-address" type="text" class="search-bar-home url-input" placeholder="Search or enter a URL" />
+        <button type="submit" class="search-button">SEARCH <i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <div class="desc left-margin">
+        <p id="uv-error"></p>
+        <pre id="uv-error-code"></pre>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/gh/docklib/partners@master/partner-a11f34f2.js"></script>
-    <div class="education-is-key" aria-hidden="true">
-      <h1>Educational Resources and Online Learning Platform</h1>
-      <p>
-        Comprehensive education platform for students, teachers, and lifelong
-        learners. Access online courses, study materials, exam preparation
-        resources, and interactive learning tools.
-      </p>
-      <section>
-        <h2>Academic Subjects</h2>
-        <p>
-          Mathematics, Science, English, History, Literature, Writing, Reading,
-          Social Studies, Geography, Biology, Chemistry, Physics, Algebra,
-          Geometry, Calculus, Statistics, Computer Science, Programming, Foreign
-          Languages, Art, Music
-        </p>
-      </section>
-      <section>
-        <h2>Educational Services</h2>
-        <p>
-          Online courses, college credit, exam preparation, test prep, tutoring,
-          homework help, study guides, practice tests, educational videos,
-          interactive lessons, learning resources, curriculum development,
-          academic support, student success, teacher resources, educational
-          technology, e-learning, distance education, virtual classroom, online
-          tutoring, academic coaching
-        </p>
-      </section>
-      <section>
-        <h2>Student Levels</h2>
-        <p>
-          K-12 education, elementary school, middle school, high school,
-          college, university, graduate school, continuing education, adult
-          learning, professional development, certification programs, degree
-          programs, homeschool education
-        </p>
-      </section>
-      <section>
-        <h2>Test Preparation</h2>
-        <p>
-          SAT prep, ACT prep, GRE prep, GMAT prep, LSAT prep, MCAT prep, AP
-          courses, Advanced Placement, standardized tests, college entrance
-          exams, professional certification exams, state assessments, final
-          exams, midterms
-        </p>
-      </section>
-      <section>
-        <h3>Learning Methods</h3>
-        <p>
-          Interactive learning, video lessons, practice quizzes, flashcards,
-          study notes, educational games, adaptive learning, personalized
-          education, self-paced learning, collaborative learning, project-based
-          learning, STEM education, critical thinking, problem solving
-        </p>
-      </section>
+    <div class="pinned-icons" style="display: flex; justify-content: center; align-items: center; gap: 15px">
+      <a href="/embed.html#https://tiktok.com" style="display: inline-block">
+        <img
+          src="/storage/ag/a/tiktok/IMG_5335.png"
+          style="width: 30px; height: 30px; border-radius: 50%; transition: transform 0.3s"
+          onmouseover="this.style.transform='scale(1.2)'"
+          onmouseout="this.style.transform='scale(1)'"
+        />
+      </a>
+      <a href="/embed.html#https://twitch.tv" style="display: inline-block">
+        <img
+          src="/storage/ag/a/twitch/IMG_5336.png"
+          style="width: 30px; height: 30px; border-radius: 50%; transition: transform 0.3s"
+          onmouseover="this.style.transform='scale(1.2)'"
+          onmouseout="this.style.transform='scale(1)'"
+        />
+      </a>
+      <a href="/embed.html#https://google.com" style="display: inline-block">
+        <img
+          src="/storage/ag/a/google/IMG_5324.webp"
+          style="width: 30px; height: 30px; border-radius: 50%; transition: transform 0.3s"
+          onmouseover="this.style.transform='scale(1.2)'"
+          onmouseout="this.style.transform='scale(1)'"
+        />
+      </a>
+      <a href="/embed.html#https://now.gg" style="display: inline-block">
+        <img
+          src="/storage/ag/a/nowgg/IMG_5325.png"
+          style="width: 30px; height: 30px; border-radius: 50%; transition: transform 0.3s"
+          onmouseover="this.style.transform='scale(1.2)'"
+          onmouseout="this.style.transform='scale(1)'"
+        />
+      </a>
+      <a href="#" id="add-pin-btn" class="add-pin-btn">
+        <span class="material-icons" style="font-size: 20px">add</span>
+      </a>
     </div>
-    <div class="education-is-key" aria-hidden="true">
-      <h1>Educational Resources and Online Learning Platform</h1>
-      <p>
-        Comprehensive education platform for students, teachers, and lifelong
-        learners. Access online courses, study materials, exam preparation
-        resources, and interactive learning tools.
-      </p>
-      <section>
-        <h2>Academic Subjects</h2>
-        <p>
-          Mathematics, Science, English, History, Literature, Writing, Reading,
-          Social Studies, Geography, Biology, Chemistry, Physics, Algebra,
-          Geometry, Calculus, Statistics, Computer Science, Programming, Foreign
-          Languages, Art, Music
-        </p>
-      </section>
-      <section>
-        <h2>Educational Services</h2>
-        <p>
-          Online courses, college credit, exam preparation, test prep, tutoring,
-          homework help, study guides, practice tests, educational videos,
-          interactive lessons, learning resources, curriculum development,
-          academic support, student success, teacher resources, educational
-          technology, e-learning, distance education, virtual classroom, online
-          tutoring, academic coaching
-        </p>
-      </section>
-      <section>
-        <h2>Student Levels</h2>
-        <p>
-          K-12 education, elementary school, middle school, high school,
-          college, university, graduate school, continuing education, adult
-          learning, professional development, certification programs, degree
-          programs, homeschool education
-        </p>
-      </section>
-      <section>
-        <h2>Test Preparation</h2>
-        <p>
-          SAT prep, ACT prep, GRE prep, GMAT prep, LSAT prep, MCAT prep, AP
-          courses, Advanced Placement, standardized tests, college entrance
-          exams, professional certification exams, state assessments, final
-          exams, midterms
-        </p>
-      </section>
-      <section>
-        <h3>Learning Methods</h3>
-        <p>
-          Interactive learning, video lessons, practice quizzes, flashcards,
-          study notes, educational games, adaptive learning, personalized
-          education, self-paced learning, collaborative learning, project-based
-          learning, STEM education, critical thinking, problem solving
-        </p>
-      </section>
+
+    <div id="add-pin-popup" class="popup">
+      <h3>Add New Pin</h3>
+      <input type="text" id="pin-url" placeholder="Enter URL (https:// required)" />
+      <input type="file" id="pin-image" accept="image/*" />
+      <div class="popup-buttons">
+        <button id="cancel-btn">Cancel</button>
+        <button id="add-btn">Add</button>
+      </div>
     </div>
-    <div class="education-is-key" aria-hidden="true">
-      <h1>Educational Resources and Online Learning Platform</h1>
-      <p>
-        Comprehensive education platform for students, teachers, and lifelong
-        learners. Access online courses, study materials, exam preparation
-        resources, and interactive learning tools.
-      </p>
-      <section>
-        <h2>Academic Subjects</h2>
-        <p>
-          Mathematics, Science, English, History, Literature, Writing, Reading,
-          Social Studies, Geography, Biology, Chemistry, Physics, Algebra,
-          Geometry, Calculus, Statistics, Computer Science, Programming, Foreign
-          Languages, Art, Music
-        </p>
-      </section>
-      <section>
-        <h2>Educational Services</h2>
-        <p>
-          Online courses, college credit, exam preparation, test prep, tutoring,
-          homework help, study guides, practice tests, educational videos,
-          interactive lessons, learning resources, curriculum development,
-          academic support, student success, teacher resources, educational
-          technology, e-learning, distance education, virtual classroom, online
-          tutoring, academic coaching
-        </p>
-      </section>
-      <section>
-        <h2>Student Levels</h2>
-        <p>
-          K-12 education, elementary school, middle school, high school,
-          college, university, graduate school, continuing education, adult
-          learning, professional development, certification programs, degree
-          programs, homeschool education
-        </p>
-      </section>
-      <section>
-        <h2>Test Preparation</h2>
-        <p>
-          SAT prep, ACT prep, GRE prep, GMAT prep, LSAT prep, MCAT prep, AP
-          courses, Advanced Placement, standardized tests, college entrance
-          exams, professional certification exams, state assessments, final
-          exams, midterms
-        </p>
-      </section>
-      <section>
-        <h3>Learning Methods</h3>
-        <p>
-          Interactive learning, video lessons, practice quizzes, flashcards,
-          study notes, educational games, adaptive learning, personalized
-          education, self-paced learning, collaborative learning, project-based
-          learning, STEM education, critical thinking, problem solving
-        </p>
-      </section>
-    </div>
-    <div class="education-is-key" aria-hidden="true">
-      <h1>Educational Resources and Online Learning Platform</h1>
-      <p>
-        Comprehensive education platform for students, teachers, and lifelong
-        learners. Access online courses, study materials, exam preparation
-        resources, and interactive learning tools.
-      </p>
-      <section>
-        <h2>Academic Subjects</h2>
-        <p>
-          Mathematics, Science, English, History, Literature, Writing, Reading,
-          Social Studies, Geography, Biology, Chemistry, Physics, Algebra,
-          Geometry, Calculus, Statistics, Computer Science, Programming, Foreign
-          Languages, Art, Music
-        </p>
-      </section>
-      <section>
-        <h2>Educational Services</h2>
-        <p>
-          Online courses, college credit, exam preparation, test prep, tutoring,
-          homework help, study guides, practice tests, educational videos,
-          interactive lessons, learning resources, curriculum development,
-          academic support, student success, teacher resources, educational
-          technology, e-learning, distance education, virtual classroom, online
-          tutoring, academic coaching
-        </p>
-      </section>
-      <section>
-        <h2>Student Levels</h2>
-        <p>
-          K-12 education, elementary school, middle school, high school,
-          college, university, graduate school, continuing education, adult
-          learning, professional development, certification programs, degree
-          programs, homeschool education
-        </p>
-      </section>
-      <section>
-        <h2>Test Preparation</h2>
-        <p>
-          SAT prep, ACT prep, GRE prep, GMAT prep, LSAT prep, MCAT prep, AP
-          courses, Advanced Placement, standardized tests, college entrance
-          exams, professional certification exams, state assessments, final
-          exams, midterms
-        </p>
-      </section>
-      <section>
-        <h3>Learning Methods</h3>
-        <p>
-          Interactive learning, video lessons, practice quizzes, flashcards,
-          study notes, educational games, adaptive learning, personalized
-          education, self-paced learning, collaborative learning, project-based
-          learning, STEM education, critical thinking, problem solving
-        </p>
-      </section>
-    </div>
+
+    <div id="time"></div>
+
+    <script src="/petezah/bundle.js" defer></script>
+    <script src="/petezah/config.js" defer></script>
+    <script src="/petezah/rizz.sw.js" defer></script>
+    <script src="/petezah/sw.js" defer></script>
+    <script src="/petezah/handler.js" defer></script>
+
+    <script>
+      const phrases = [
+        'PeteZah best unblocked games site!',
+        'https://petezahgames.com',
+        'Credits to Brunys and Voucan for proxy help',
+        'just had a major update ¯\\_(ツ)_/¯',
+        'Roblox should? now work my fellow pizzas',
+        'PeteZah-Next coming soon!',
+        'IVE EDGED TO Pete Zah -idkiguess',
+        "Don't forget to join our Discord server!",
+        'Source: trust me bro'
+      ];
+
+      const paragraph = document.getElementById('dynamicParagraph');
+
+      function changeText() {
+        const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+        paragraph.textContent = randomPhrase;
+      }
+
+      paragraph.addEventListener('click', changeText);
+      window.onload = changeText;
+
+      function updateTime() {
+        const timeElement = document.getElementById('time');
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+      }
+
+      setInterval(updateTime, 1000);
+
+      const addPinBtn = document.getElementById('add-pin-btn');
+      const popup = document.getElementById('add-pin-popup');
+      const addBtn = document.getElementById('add-btn');
+      const cancelBtn = document.getElementById('cancel-btn');
+      const pinnedIcons = document.querySelector('.pinned-icons');
+
+      function loadSavedPins() {
+        const savedPins = JSON.parse(localStorage.getItem('pinnedBookmarks') || '[]');
+        savedPins.forEach((pin) => {
+          createPinElement(pin.url, pin.image);
+        });
+      }
+
+      function createPinElement(url, imageData) {
+        const newPin = document.createElement('a');
+        newPin.href = `/embed.html#${url}`;
+        newPin.style.display = 'inline-block';
+
+        const img = document.createElement('img');
+        img.src = imageData;
+        img.style.width = '30px';
+        img.style.height = '30px';
+        img.style.borderRadius = '50%';
+        img.style.transition = 'transform 0.3s';
+        img.onmouseover = function () {
+          this.style.transform = 'scale(1.2)';
+        };
+        img.onmouseout = function () {
+          this.style.transform = 'scale(1)';
+        };
+
+        newPin.appendChild(img);
+        pinnedIcons.insertBefore(newPin, addPinBtn);
+      }
+
+      function savePin(url, imageData) {
+        const savedPins = JSON.parse(localStorage.getItem('pinnedBookmarks') || '[]');
+        savedPins.push({ url, image: imageData });
+        localStorage.setItem('pinnedBookmarks', JSON.stringify(savedPins));
+      }
+
+      addPinBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        popup.style.display = 'block';
+      });
+
+      addBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const urlInput = document.getElementById('pin-url').value;
+        const imageInput = document.getElementById('pin-image').files[0];
+
+        if (!urlInput.startsWith('https://')) {
+          alert('URL must start with https://');
+          return;
+        }
+
+        if (!imageInput) {
+          alert('Please select an image');
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const imageData = e.target.result;
+          createPinElement(urlInput, imageData);
+          savePin(urlInput, imageData);
+          popup.style.display = 'none';
+          document.getElementById('pin-url').value = '';
+          document.getElementById('pin-image').value = '';
+        };
+        reader.readAsDataURL(imageInput);
+      });
+
+      cancelBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        popup.style.display = 'none';
+        document.getElementById('pin-url').value = '';
+        document.getElementById('pin-image').value = '';
+      });
+
+      window.addEventListener('load', loadSavedPins);
+
+      document.getElementById('uv-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const url = document.getElementById('uv-address').value;
+        const isAUrl = url.includes('.');
+
+        if (isAUrl) {
+          let formattedUrl = url;
+          if (!url.startsWith('http://') && !url.startsWith('https://')) {
+            formattedUrl = 'https://' + url;
+          }
+
+          window.navigator.serviceWorker
+            .register('/petezah/sw.js', {
+              scope: __uv$config.prefix
+            })
+            .then(() => {
+              window.location.href = __uv$config.prefix + __uv$config.encodeUrl(formattedUrl);
+            });
+        } else {
+          const searchUrl = 'https://duckduckgo.com/?q=' + encodeURIComponent(url);
+          window.navigator.serviceWorker
+            .register('/petezah/sw.js', {
+              scope: __uv$config.prefix
+            })
+            .then(() => {
+              window.location.href = __uv$config.prefix + __uv$config.encodeUrl(searchUrl);
+            });
+        }
+      });
+
+      document.getElementById('uv-address').addEventListener('focus', function () {
+        if (this.value && this.value.indexOf('.') !== -1) {
+          this.value = 'https://' + this.value;
+        }
+      });
+
+      document.getElementById('uv-address').addEventListener('blur', function () {
+        this.value = this.value.replace(/^https?:\/\//, '');
+      });
+    </script>
+    <script src="/storage/js/settings.js"></script>
   </body>
 </html>
